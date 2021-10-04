@@ -1,5 +1,4 @@
-// import logo from './logo.svg';
-import TimerIcon from './components/TimerIcon';
+import Body from './components/Body';
 import Footer from './components/Footer';
 
 import './App.css';
@@ -7,7 +6,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <TimerIcon />
+      <Body />
       <Footer />
     </>
   );

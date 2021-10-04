@@ -1,9 +1,9 @@
 import React from 'react'
 
-function TimerIcon() {
+function TimerIcon({number}) {
     return (
-        <div className="timer-icon">
-            WE'RE LAUNCHING SOON
+        <div className="timer-icon">            
+            {number}            
         </div>
     )
 }
