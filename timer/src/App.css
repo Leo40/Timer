@@ -1,13 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+
 :root {
   height: 100%;
   width: 100%;
   margin: 0;
   display: flex;
-  /* flex-direction: column;
-  justify-content: center; */
-  background-color: red;
   flex-direction: row;
   margin: 0;
+  background-color: hsl(235, 16%, 14%);
+}
+
+* {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 14px;
 }
 
 .App {
@@ -42,34 +47,55 @@
 
 .timer-icon {
   display: flex;
-  border: 1px solid black;
   height: 80px;
   width: 120px;
-  background-color: gray;
+  background-color: hsl(236, 21%, 26%);
   border-radius: 5px;
   margin: 10px;
   box-shadow: blue 10px;
-  color: red;
-  font-size: 40px;
+  color: hsl(345, 95%, 68%);
   justify-content: center;
   align-items: center;
+  font-size: 40px;
 }
 
-/* .number {
-  display: flex;
-  font-size: 40px;
-  color: red;
-  justify-content: center;
-  align-items: center;
-  background-color: blue;
-} */
-
 .footer {
-  /* margin-top: 10px; */
   height: 150px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   background-image: url("./images/pattern-hills.svg");
   flex-basis: 500px;
   background-color: hsl(235, 16%, 14%);
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 200px;
+}
+
+.fb-icon,
+.pt-icon,
+.ig-icon {
+  height: 30px;
+  width: 40px;
+  margin: 20px;
+  background-repeat: no-repeat;
+}
+
+.fb-icon {
+  background-image: url("./images/icon-facebook.svg");
+  /* background-color: hsl(345, 95%, 68%); */
+}
+
+.pt-icon {
+  background-image: url("./images/icon-pinterest.svg");
+}
+
+.ig-icon {
+  background-image: url("./images/icon-instagram.svg");
 }
