@@ -1,6 +1,6 @@
 import React from 'react'
 
-function TimerIcon({type, number, seconds, setSeconds, minutes, setMinutes, flag, setFlag}) {
+function TimerIcon({type, number, seconds, setSeconds, minutes, setMinutes, flag, setFlag, prevSeconds}) {
         
     const countDown = () => {
 
@@ -17,7 +17,7 @@ function TimerIcon({type, number, seconds, setSeconds, minutes, setMinutes, flag
                 if (seconds > 0) {       
                     setFlag(false);             
                     seconds--;
-                    setSeconds(prevSeconds => (prevSeconds - 1));
+                    setSeconds(seconds);
                     }
                 else if (seconds === 0) {
                     // clearTimeout(start);
@@ -26,7 +26,7 @@ function TimerIcon({type, number, seconds, setSeconds, minutes, setMinutes, flag
                 }
             }
             start();       
-            return seconds;     
+            return prevSeconds;     
         }      
         else if(type === "minutes"){            
             if(flag === true) {
